@@ -1,0 +1,61 @@
+#main {
+  background-color: #f6f6f6;
+  > .nomore {
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+    color: #fa4b43;
+    display: none;
+  }
+}
+
+.goods-list {
+  padding-top: 20px;
+  width: var(--width);
+  margin: 0 auto;
+  overflow: hidden;
+
+  > li {
+    // float: left;
+    display: inline-flex;
+    flex-direction: column;
+    width: 240px;
+    margin: 0 0 30px 48px;
+    background-color: white;
+
+    img {
+      width: 100%;
+    }
+    > div {
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-between;
+
+      > a:nth-child(2) {
+        &:hover {
+          color: orange;
+        }
+
+        margin: 10px 0;
+      }
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > span:first-child {
+          color: #fa4b43;
+          font-size: 24px;
+        }
+
+        > span:last-child {
+          color: #999;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

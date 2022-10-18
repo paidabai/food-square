@@ -1,0 +1,75 @@
+#nav {
+  display: flex;
+  height: 100%;
+  width: var(--width);
+  margin: 0 auto;
+  align-items: center;
+}
+#nav > a > img {
+  width: 120px;
+}
+#nav a {
+  color: white;
+}
+#nav > div:nth-of-type(2) {
+  height: 100%;
+  display: flex;
+  margin-left: 10px;
+}
+#nav > div:nth-of-type(2) a {
+  font-weight: bold;
+  padding: 0 15px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+#nav > div:nth-of-type(2) a:hover {
+  background-color: #f8625b;
+}
+#nav > div:nth-of-type(3),
+#nav div:nth-of-type(4) {
+  margin-left: auto;
+}
+#nav > div:nth-of-type(3) a,
+#nav div:nth-of-type(4) a {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+#nav > div:nth-of-type(1) {
+  position: relative;
+}
+#nav > div:nth-of-type(1) > input {
+  border-radius: 100px;
+  padding: 7px 15px;
+  margin-left: 20px;
+  width: 180px;
+  font-size: 1.4rem;
+  transition: width 0.2s linear;
+}
+#nav > div:nth-of-type(1) > input:focus {
+  width: 200px;
+}
+#nav > div:nth-of-type(1) > button {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f94751;
+  color: white;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  height: calc(100% - 2px);
+  width: 50px;
+}
+#nav > div:nth-of-type(1) > button:hover {
+  background-color: #eb4b34;
+  cursor: pointer;
+}
+#nav > #isLogin {
+  display: flex;
+  align-items: center;
+}
+#nav > #isLogin > span,
+#nav > #isLogin button {
+  color: white;
+}/*# sourceMappingURL=header.css.map */

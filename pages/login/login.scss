@@ -1,0 +1,218 @@
+#footer {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  background: url('/assets/img/login/bg.jpg') no-repeat;
+  background-size: cover;
+
+  padding-top: 1px;
+  > div:first-child {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 60px 0;
+    white-space: nowrap;
+    text-overflow: ' ';
+    overflow: hidden;
+  }
+  height: 700px;
+}
+
+#area {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  box-shadow: 0 0 2px 1px #ddd;
+
+  // 标题
+  > div:first-child {
+    user-select: none;
+    span,
+    em {
+      font-size: 26px;
+      color: #888;
+      font-weight: bold;
+      margin: 0 12px;
+      cursor: pointer;
+    }
+
+    span {
+      &:hover {
+        color: #000;
+        text-decoration: underline;
+      }
+      &.active {
+        color: #000;
+      }
+    }
+  }
+
+  // 输入框
+  > div:nth-child(2) {
+    display: flex;
+    width: 500px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 30px;
+
+    > div {
+      // background-color: #aaa;
+
+      flex: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      justify-content: space-between;
+
+      > [type='text'] {
+        margin-bottom: 15px;
+      }
+
+      &:last-child {
+        [type='text'],
+        [type='password'] {
+          width: 100%;
+        }
+      }
+
+      &:first-child {
+        > div:nth-child(2) {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+
+          button {
+            width: 250px;
+            line-height: 50px;
+            font-size: 20px;
+            background-color: #8fc31f;
+            color: white;
+            border-radius: 100px;
+            margin-left: 50px;
+            &:hover {
+              background-color: #75ab49;
+            }
+          }
+        }
+      }
+      [type='text'],
+      [type='password'] {
+        border-radius: 100px;
+        border: 1px solid #aaa;
+        font-size: 20px;
+        padding: 16px 25px;
+        outline: none;
+
+        &:first-child {
+          width: 100%;
+        }
+      }
+
+      > div:nth-child(3) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 20px 0;
+        align-items: center;
+        user-select: none;
+
+        span,
+        a {
+          color: #777;
+          font-size: 16px;
+        }
+
+        a:hover {
+          color: #ea5d4e;
+          text-decoration: underline;
+        }
+
+        > label:first-child {
+          margin-right: 50px;
+        }
+      }
+    }
+
+    button.login {
+      background-color: #ea5d4e;
+      border-radius: 100px;
+      width: 250px;
+      line-height: 60px;
+      color: white;
+      font-size: 23px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #db432e;
+      }
+    }
+  }
+
+  // 三方
+  > div:nth-child(3) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // background-color: red;
+    > div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      // background-color: gray;
+      width: 100%;
+      div {
+        height: 1px;
+        background-color: #888;
+        flex: 1;
+      }
+
+      span {
+        margin: 30px 20px;
+        color: #888;
+      }
+    }
+    > div:nth-child(2) {
+      img {
+        width: 40px;
+        margin: 0 20px;
+      }
+    }
+    > div:nth-child(3) {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > a {
+        user-select: none;
+        color: #888;
+        font-size: 14px;
+        &:hover {
+          color: #db432e;
+          text-decoration: underline;
+        }
+
+        &:not(.active) {
+          display: none;
+        }
+      }
+      > div {
+        margin-top: 20px;
+        > a {
+          color: #777;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

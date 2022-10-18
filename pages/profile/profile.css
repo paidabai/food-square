@@ -1,0 +1,66 @@
+#main {
+  background-color: #f2f2f2;
+}
+#main > div {
+  margin: 0 auto;
+  width: var(--width);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+#main > div > div {
+  background-color: white;
+  border-radius: 6px;
+  padding: 15px;
+}
+#main > div > div:first-child {
+  width: 190px;
+}
+#main > div > div:first-child h1 {
+  margin-bottom: 30px;
+}
+#main > div > div:first-child li {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  user-select: none;
+  cursor: pointer;
+}
+#main > div > div:first-child li.active {
+  color: #f75148;
+}
+#main > div > div:last-child {
+  width: 1000px;
+}
+#main > div > div:last-child h2 {
+  background-color: #f6f6f6;
+  padding: 10px;
+  box-shadow: 0 1px 2px 2px #fdfdfd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+#main > div > div:last-child > div:first-child table {
+  width: 100%;
+}
+#main > div > div:last-child > div:first-child table tr td {
+  border-bottom: 1px solid #aaa;
+  padding: 10px;
+  font-size: 1.4em;
+}
+#main > div > div:last-child > div:first-child table tr td:first-child {
+  width: 130px;
+  color: #555;
+}
+#main > div > div:last-child > div:last-child button {
+  border-radius: 8px;
+  padding: 10px 50px;
+  background-color: orange;
+  color: white;
+  font-size: 1.4rem;
+}
+#main > div > div:last-child > div:last-child button:active {
+  opacity: 0.7;
+}
+
+#footer {
+  display: none;
+}/*# sourceMappingURL=profile.css.map */

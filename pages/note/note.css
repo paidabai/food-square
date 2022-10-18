@@ -1,0 +1,63 @@
+#main {
+  width: var(--width);
+  margin: 0 auto;
+}
+
+.pb {
+  position: relative;
+  margin-top: 10px;
+}
+
+.pb>div {
+  position: absolute;
+  width: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px;
+}
+
+.note img {
+  width: 100%;
+}
+.note > div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.note > div > a {
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  font-size: 15px;
+}
+.note > div > div {
+  display: flex;
+  align-items: center;
+}
+.note > div > div > .user-head > img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.note > div > div > a:nth-child(2) {
+  font-size: 12px;
+}
+.note > div > div > a:nth-child(3) {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.no-more {
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+  color: #fa4b43;
+  display: none;
+}/*# sourceMappingURL=note.css.map */
