@@ -3,16 +3,14 @@
   margin: 0 auto;
 }
 
-ul {
+.pb {
   position: relative;
-  height: 1000px;
   padding-top: 20px;
 }
 
 .note {
   width: 275px;
   position: absolute;
-
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
