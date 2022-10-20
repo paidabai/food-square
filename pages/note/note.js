@@ -62,7 +62,7 @@ $(function () {
         setTimeout(() => {
           $('.pb').show()
           waterfall('.pb');
-        }, 110);
+        }, 120);
           
     }
 
