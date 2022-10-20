@@ -80,7 +80,13 @@ $(function () {
     const allright = Array.from($('#main div>input')).every(el => $(el).data('status'))
 
     if (!allright) {
-      alert('请确保所有信息填写正确!')
+      showMessage('请确保所有信息填写正确!',0)
+      return
+    }
+
+    const checkbox = $(':checkbox').prop('checked')
+    if (!checkbox) {
+      showMessage('请阅读并同意协议!',0)
       return
     }
 
