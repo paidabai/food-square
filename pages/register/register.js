@@ -1,4 +1,5 @@
 $(function () {
+  const user = JSON.parse(sessionStorage.getItem('user') || localStorage.getItem('user'))
   const $pwd = $('[name=pwd]')
   const $phone = $('[name=phone]')
   const $re_pwd = $('[name=re-pwd]')
@@ -95,4 +96,11 @@ $(function () {
       }
     })
   })
+  // 判断用户
+  if (user) {
+    showMessage('请退出登录再注册吧',0)
+    setTimeout(() => {
+      location.href = '/'
+    },1500)
+  }
 })

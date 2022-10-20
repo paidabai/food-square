@@ -1,4 +1,5 @@
 $(function () {
+  const user = JSON.parse(sessionStorage.getItem('user') || localStorage.getItem('user'))
   $('#area2 .login').click(function () {
     const phone = $('#area2 input').eq(0).val()
     const pwd = $('#area2 input').eq(1).val()
@@ -14,22 +15,26 @@ $(function () {
         }
         showMessage('登录成功',1)
 
-        const user = JSON.parse(sessionStorage.getItem('user') || localStorage.getItem('user'))
-        if (user) {
-          $('#notLogin').hide()
-          $('#isLogin').show()
-          $('#isLogin>span').html(`欢迎,<a  href="/profile">${user.phone}</a>`)
-        } else {
-          $('#isLogin').hide()
-          $('#notLogin').show()
-        }
-
         setTimeout(() => {
           location.href = '/'
         },1500)
       } else {
+        $('#isLogin').hide()
+        $('#notLogin').show()
         showMessage('登录失败',0)
       }
     })
   })
+  if (user) {
+    $('#notLogin').hide()
+    $('#isLogin').show()
+    $('#isLogin>span').html(`欢迎,<a  href="/profile">${user.phone}</a>`)
+    showMessage('已经登录了哦',0)
+    setTimeout(() => {
+      location.href = '/'
+    },1500)
+  } else {
+    $('#isLogin').hide()
+    $('#notLogin').show()
+  }
 })

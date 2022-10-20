@@ -1,7 +1,7 @@
 $(() => {
 
   if (localStorage.user === undefined && sessionStorage.user === undefined) {
-    showMessage("非法访问，请登录", 0);
+    showMessage("请先登录哦", 0);
     setTimeout(() => { 
       location.href = '?page=login'
     },1500)

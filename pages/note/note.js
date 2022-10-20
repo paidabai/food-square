@@ -115,7 +115,7 @@ $(function () {
     const top = $more.offset().top
     const y = document.body.scrollTop || document.documentElement.scrollTop
 
-    if (y + innerHeight + 200 > top && !loading) {
+    if (y + innerHeight + 250 > top && !loading) {
       getData()
     }
   }
