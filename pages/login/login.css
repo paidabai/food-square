@@ -7,7 +7,7 @@
   background: url("/assets/img/login/bg.jpg") no-repeat;
   background-size: cover;
   padding-top: 1px;
-  height: 700px;
+  height: 850px;
 }
 #main > div:first-child {
   font-size: 40px;
@@ -27,9 +27,11 @@
   align-items: center;
   padding: 30px;
   width: 600px;
+  height: 450px;
   margin: 0 auto;
   margin-bottom: 10px;
   box-shadow: 0 0 2px 1px #ddd;
+  padding-top: 60px;
 }
 #area > div:first-child {
   user-select: none;

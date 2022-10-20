@@ -3,8 +3,10 @@
 }
 
 body {
-  background-color: #fae8c8;
+  background-color: #efeeec;
+  background: url("/assets/img/login/bg.jpg") no-repeat;
 }
+
 
 #main {
   padding: 50px 130px;
@@ -12,15 +14,15 @@ body {
   flex-direction: column;
   width: 600px;
   padding: 50px 130px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 30px;
   margin: 100px auto;
 }
 #main > h3 {
   text-align: center;
   margin-bottom: 30px;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 #main > div {
   display: flex;
@@ -31,7 +33,7 @@ body {
   padding: 13px;
   outline: none;
   border: 1px solid #aaa;
-  border-radius: 4px;
+  border-radius: 10px;
   font-weight: normal;
 }
 #main > div em {
@@ -49,8 +51,8 @@ body {
 #main > button {
   background-color: #ec5541;
   color: white;
-  width: 80px;
-  line-height: 34px;
+  width: 95px;
+  line-height: 40px;
   border-radius: 4px;
   align-self: center;
   margin-top: 20px;
